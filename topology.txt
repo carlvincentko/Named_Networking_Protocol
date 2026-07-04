@@ -1,0 +1,22 @@
+/DLSU/NameServer1: /DLSU/Henry, /DLSU/Miguel
+/DLSU/Andrew/PC1: /DLSU/Andrew
+/DLSU/Andrew: /DLSU/Gokongwei, /DLSU/Router1, /DLSU/Andrew/PC1
+/DLSU/Gokongwei: /DLSU/Andrew, /DLSU, /DLSU/Henry
+/DLSU/Henry: /DLSU/NameServer1, /DLSU/Gokongwei, /DLSU, /DLSU/Miguel
+/DLSU: /DLSU/Gokongwei, /DLSU/Henry, /DLSU/Miguel
+/DLSU/Miguel: /DLSU/NameServer1, /DLSU, /DLSU/Henry, /DLSU/Miguel/cam1
+/DLSU/Miguel/cam1: /DLSU/Miguel
+/DLSU/Router1 /ADMU/Router1: /DLSU/Andrew, /DLSU/Gokongwei, /DLSU, /ADMU/Gonzaga, /ADMU
+
+/ADMU/NameServer1: /ADMU
+/ADMU/Gonzaga: /DLSU/Router1, /ADMU, /ADMU/Gonzaga/cam1
+/ADMU: /ADMU/NameServer1, /DLSU/Router1, /ADMU/Gonzaga, /ADMU/Kostka, /ADMU/Router2
+/ADMU/Gonzaga/cam1: /ADMU/Gonzaga
+/ADMU/Kostka: /ADMU, /ADMU/Router2
+/ADMU/Router2 /UP/Router1: /ADMU, /ADMU/Kostka, /UP, /UP/Salcedo
+
+/UP/NameServer1: /UP/Lara
+/UP: /ADMU/Router2, /UP/Salcedo, /UP/Lara
+/UP/Salcedo: /ADMU/Router2, /UP, /UP/Lara, /UP/Salcedo/PC1
+/UP/Lara: /UP/NameServer1, /UP, /UP/Salcedo
+/UP/Salcedo/PC1: /UP/Salcedo

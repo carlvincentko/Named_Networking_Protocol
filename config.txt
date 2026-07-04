@@ -1,0 +1,32 @@
+# Configuration File for Named-Networking-NIS3
+# Edit these values to control how the network simulation runs
+
+# Mode: 'manual' or 'auto'
+# - manual: sends a fixed number of requests (controlled by request_count)
+# - auto: sends requests for a duration (controlled by request_time)
+mode=manual
+
+# Origin node name (source of requests)
+# Examples: /DLSU/Andrew/PC1, /ADMU/Gonzaga, /UP/Salcedo/PC1, etc.
+origin_node=/DLSU/Andrew/PC1
+
+# Destination node name (where requests are sent)
+# Examples: /DLSU/Miguel/cam1, /UP/Salcedo, /ADMU/Gonzaga, etc.
+destination_node=/DLSU/Miguel
+
+# Number of requests to send (used only in 'manual' mode)
+# Default: 1
+request_count=1
+
+# Duration in seconds to send requests (used only in 'auto' mode)
+# Default: 1
+request_time=1
+
+# Whether to run only single initialization (True) or periodic initialization (False)
+# True: runs initialization once
+# False: runs periodic initialization every 30 seconds
+only_start_init=True
+
+# In auto mode with random: randomly select origin and destination for each request (True/False)
+# Default: True
+random_nodes=True

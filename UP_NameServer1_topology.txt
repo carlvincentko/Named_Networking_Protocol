@@ -1,0 +1,6 @@
+/ADMU/Router2 /UP/Router1: /ADMU, /ADMU/Kostka, /UP, /UP/Salcedo
+/UP: /ADMU/Router2 /UP/Router1, /UP/Lara, /UP/Salcedo
+/UP/Lara: /UP, /UP/NameServer1, /UP/Salcedo
+/UP/NameServer1: /UP/Lara
+/UP/Salcedo: /ADMU/Router2 /UP/Router1, /UP, /UP/Lara, /UP/Salcedo/PC1
+/UP/Salcedo/PC1: /UP/Salcedo
